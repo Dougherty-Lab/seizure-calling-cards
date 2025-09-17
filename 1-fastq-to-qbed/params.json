@@ -1,0 +1,7 @@
+{
+	"aligner": "bwamem2",
+	"fasta" : "/ref/jdlab/data/genomes/Mus_musculus/UCSC/mm10/Sequence/WholeGenomeFasta/genome.fa",
+	"gtf" : "/ref/jdlab/data/genomes/Mus_musculus/UCSC/mm10/Annotation/gencode.vM23.annotation.gtf.gz",
+	"fasta_index" : "/ref/jdlab/data/bwamem-2_index/bwamem2_mm10/genome.fa.fai", 
+	"bwamem2_index" : "/ref/jdlab/data/bwamem-2_index/bwamem2_mm10"
+}

@@ -1,0 +1,13 @@
+This is the first step in the analysis pipeline, going from FASTQ files to QBED files. 
+
+FASTQ files can be downloaded from GEO: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305773 . Only R1 files are required for this analysis. 
+
+The script assumes the FASTQ files are in a subdirectory named 'raw'. If they are in a different directory, the .csv runsheet should be changed.
+
+The params.json file will need to be changed to your directories containing genome, annotation, and index files for mm10.
+
+The .config file will need to be adjusted for your cluster's computing environment.
+
+The .sh file will need to changed to your directories (see file for detials.)
+
+The output of this analysis is QBED files, which contain genomic coordinates for transposon insertions. These will be individual QBED files for each tissue piece, so before the next analysis they will need to be merged and sorted by animal. This can be done using the 'cat' on the Terminal until all pieces per animal are merged, followed by sort-bed from bedops.

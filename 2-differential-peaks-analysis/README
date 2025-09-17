@@ -1,0 +1,5 @@
+This is the second step of the analysis, after you have generated QBED files from the FASTQs. Here we will call peaks on the insertions, intersect the insertions with the peaks, and perform differential peak analysis. 
+
+The unmerged QBEDs can be generated from the previous analysis or downloaded from GEO: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE305773 . 
+
+Before beginning, the QBEDs need to be merged and sorted by animal. This can be done using the 'cat' on the Terminal until all pieces per animal are merged, followed by sort-bed from bedops.
