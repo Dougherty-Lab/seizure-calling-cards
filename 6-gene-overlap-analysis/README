@@ -1,0 +1,5 @@
+This analysis recreates the permutation testing for significant gene overlaps in Figure 4, Figure S5, and Figure S6.
+
+You will need the genelist.csv file, which can be recreated from columns in the differential peaks analysis, or Supplementary Data 2. The file with the relevant columns is also available here.
+
+You will need the disease gene lists, which is available as Supplementary Data 5 and is also included here.
