@@ -1,0 +1,3 @@
+This code reproduces the downsampling analysis in Fig S4B.
+
+Before beginning, you will need the total_data.txt file which can be reproduced from the differential peak analysis, and the peaks.bed file, which is included here and can also be reproduced from the differential peak analysis.

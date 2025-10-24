@@ -1,0 +1,3 @@
+This code reproduces the shuffled label analysis from Fig S4A.
+
+Before beginning, you will need the total_data.txt file which can be reproduced from the differential peak analysis. 

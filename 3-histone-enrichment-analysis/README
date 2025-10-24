@@ -1,0 +1,18 @@
+This code reproduces the histone enrichment anlaysis shown in Figure 3B and Figure S3. 
+
+Before beginning, make sure you have the peaks.bed file (included here and reproducible from differential peak anlaysis) and the bigWig files for the histone mark ChIP-seq. These can be downloaded from the sites below:
+H3K27ac: https://www.encodeproject.org/files/ENCFF422JMO/
+H3K4me1: https://www.encodeproject.org/files/ENCFF326LFP/
+H3K27me3: https://www.encodeproject.org/files/ENCFF742UNH/
+
+First, run shift_bed.py to create a bed file with the peaks shifted by 20kb:
+python3 shift_bed.py
+
+Next, we will use deeptools to compute the matrix of peak overlap with histone marks, for both the original peak file and the shifted peak file:
+sbatch deeptools_computematrix.sh
+
+Next, we will produce the heatmaps using deeptools:
+sbatch deeptools_plot.sh
+
+Finally, we will run the script to compare histone mark signals at peak centers vs flanks:
+sbatch cal_profiles_parallel.sh
